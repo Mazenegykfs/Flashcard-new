@@ -28,7 +28,8 @@ const MatchingGame: React.FC<{ cards: Flashcard[]; onBack: () => void; showNotif
             return;
         }
         const shuffled = shuffleArray(cards).slice(0, GAME_SIZE);
-        const gc = shuffled.map(c => ({ word: c.word, meaning: c.arabicMeaning, id: c.word }));
+        // FIX: Explicitly type 'c' as Flashcard to fix type inference issue.
+        const gc = shuffled.map((c: Flashcard) => ({ word: c.word, meaning: c.arabicMeaning, id: c.word }));
         setGameCards(gc);
         setWords(shuffleArray(gc.map(c => ({ text: c.word, id: c.id }))));
         setMeanings(shuffleArray(gc.map(c => ({ text: c.meaning, id: c.id }))));
@@ -197,7 +198,8 @@ const WordScrambleGame: React.FC<{ cards: Flashcard[]; onBack: () => void; showN
     const [isAnswered, setIsAnswered] = useState(false);
 
     const setupNextWord = useCallback(() => {
-        const card = shuffleArray(cards)[0];
+        // FIX: Explicitly type 'card' as Flashcard to fix type inference issue.
+        const card: Flashcard = shuffleArray(cards)[0];
         setCurrentCard(card);
         let word = card.word;
         let scrambled = shuffleArray(word.split('')).join('');

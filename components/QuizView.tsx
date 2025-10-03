@@ -42,11 +42,13 @@ export const QuizView: React.FC<{ cards: Flashcard[]; showNotification: (message
             if (selectedLevel === 1) { // Word -> Meaning
                 correctAnswer = qCard.arabicMeaning;
                 options.add(correctAnswer);
-                distractorPool = shuffleArray(cards.map(c => c.arabicMeaning).filter(m => m !== correctAnswer));
+                // FIX: Explicitly type 'c' as Flashcard to fix type inference issue.
+                distractorPool = shuffleArray(cards.map((c: Flashcard) => c.arabicMeaning).filter(m => m !== correctAnswer));
             } else { // Description -> Word
                 correctAnswer = qCard.word;
                 options.add(correctAnswer);
-                distractorPool = shuffleArray(cards.map(c => c.word).filter(w => w !== correctAnswer));
+                // FIX: Explicitly type 'c' as Flashcard to fix type inference issue.
+                distractorPool = shuffleArray(cards.map((c: Flashcard) => c.word).filter(w => w !== correctAnswer));
             }
             
             while(options.size < 4 && distractorPool.length > 0) {
