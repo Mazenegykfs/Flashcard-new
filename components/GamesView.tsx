@@ -1,3 +1,4 @@
+// FIX: Changed to a proper ES module import for React and hooks.
 import React, { useState, useEffect, useCallback } from 'react';
 import type { Flashcard } from '../types.tsx';
 import { RestartIcon, ScoreIcon } from './icons.tsx';

@@ -1,4 +1,4 @@
-
+// FIX: Changed to a proper ES module import for React and hooks.
 import React, { useState, useEffect } from 'react';
 import type { NotificationMessage } from '../types.tsx';
 

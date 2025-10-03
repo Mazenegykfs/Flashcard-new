@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 const Head = <circle cx="140" cy="70" r="20" />;
 const Body = <line x1="140" y1="90" x2="140" y2="130" />;
 const RightArm = <line x1="140" y1="100" x2="170" y2="120" />;

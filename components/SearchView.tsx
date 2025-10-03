@@ -1,4 +1,4 @@
-
+// FIX: Changed to a proper ES module import for React and hooks.
 import React, { useState, useMemo } from 'react';
 import type { Flashcard } from '../types.tsx';
 
