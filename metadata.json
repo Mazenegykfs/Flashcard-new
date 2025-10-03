@@ -1,0 +1,5 @@
+{
+  "name": "Interactive English Flashcards",
+  "description": "An interactive web application to help users memorize and quiz themselves on English vocabulary using flashcards. It includes various modes like memorize, search, quiz, and vocabulary games.",
+  "requestFramePermissions": []
+}
