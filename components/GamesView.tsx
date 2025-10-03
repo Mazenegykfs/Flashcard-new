@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { Flashcard } from '../types';
-import { RestartIcon, ScoreIcon } from './icons';
-import { HangmanDrawing } from './HangmanDrawing';
+import type { Flashcard } from '../types.tsx';
+import { RestartIcon, ScoreIcon } from './icons.tsx';
+import { HangmanDrawing } from './HangmanDrawing.tsx';
 
 type Game = 'menu' | 'matching' | 'hangman' | 'scramble';
 

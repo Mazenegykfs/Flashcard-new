@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import type { Flashcard } from '../types';
-import { AutoplayIcon, NextIcon, PrevIcon, PronounceIcon, ShuffleIcon, StopIcon } from './icons';
+import type { Flashcard } from '../types.tsx';
+import { AutoplayIcon, NextIcon, PrevIcon, PronounceIcon, ShuffleIcon, StopIcon } from './icons.tsx';
 
 const colorMap: { [key: string]: string } = {
     'red': '#ff0000', 'green': '#008000', 'blue': '#0000ff', 'yellow': '#ffff00',

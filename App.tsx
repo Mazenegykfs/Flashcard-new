@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import type { Flashcard, AppMode, NotificationMessage } from './types';
-import { FileLoader } from './components/FileLoader';
-import { MemorizeView } from './components/MemorizeView';
-import { SearchView } from './components/SearchView';
-import { QuizView } from './components/QuizView';
-import { GamesView } from './components/GamesView';
-import { Notification } from './components/Notification';
-import { BookOpenIcon, GamepadIcon, QuizIcon, SearchIcon } from './components/icons';
+import type { Flashcard, AppMode, NotificationMessage } from './types.tsx';
+import { FileLoader } from './components/FileLoader.tsx';
+import { MemorizeView } from './components/MemorizeView.tsx';
+import { SearchView } from './components/SearchView.tsx';
+import { QuizView } from './components/QuizView.tsx';
+import { GamesView } from './components/GamesView.tsx';
+import { Notification } from './components/Notification.tsx';
+import { BookOpenIcon, GamepadIcon, QuizIcon, SearchIcon } from './components/icons.tsx';
 
 const Header: React.FC = () => (
     <header className="text-center mb-5 bg-[#4b1cf9] p-5 rounded-2xl text-white shadow-lg">

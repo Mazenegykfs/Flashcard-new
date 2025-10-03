@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import type { NotificationMessage } from '../types';
+import type { NotificationMessage } from '../types.tsx';
 
 interface NotificationProps {
     notification: NotificationMessage | null;

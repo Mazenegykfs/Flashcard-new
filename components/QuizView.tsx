@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import type { Flashcard } from '../types';
-import { RestartIcon, ScoreIcon } from './icons';
+import type { Flashcard } from '../types.tsx';
+import { RestartIcon, ScoreIcon } from './icons.tsx';
 
 type QuizLevel = 1 | 2;
 type QuizStatus = 'level_select' | 'in_progress' | 'finished';

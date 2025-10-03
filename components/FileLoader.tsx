@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { Flashcard } from '../types';
-import { SpinnerIcon } from './icons';
+import type { Flashcard } from '../types.tsx';
+import { SpinnerIcon } from './icons.tsx';
 
 interface FileInfo {
     name: string;

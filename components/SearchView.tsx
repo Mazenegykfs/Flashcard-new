@@ -1,6 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
-import type { Flashcard } from '../types';
+import type { Flashcard } from '../types.tsx';
 
 const SearchResultCard: React.FC<{ card: Flashcard | null }> = ({ card }) => {
     if (!card) {
